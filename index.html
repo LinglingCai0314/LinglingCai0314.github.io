@@ -1,124 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lingling Cai - Personal Homepage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lingling Cai - Ph.D. candidate at Zhejiang University. Research in video editing, video generation, model compression and inference acceleration.">
+  <title>Lingling Cai | Personal Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile-section">
-                <img src="https://avatars.githubusercontent.com/u/175215477?v=4" alt="Lingling Cai" class="profile-photo">
-                <15>
-                <div class="profile-info">
-                    <h1>Lingling Cai (蔡玲玲)</h1>
-                    <p class="title">Ph.D. Candidate in Electronics Science and Technology</p>
-                    <p class="affiliation">Zhejiang University</p>
-                </div>
-            </div>
-        </header>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
 
-        <!-- Navigation -->
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </main>
+  <header class="hero">
+    <div class="hero__content section-wrap">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/175215477?v=4" alt="Portrait of Lingling Cai">
+      <div>
+        <p class="eyebrow">Personal Homepage</p>
+        <h1>Lingling Cai <span class="name-cn">(蔡玲玲)</span></h1>
+        <p class="subtitle">Ph.D. Candidate, Electronics Science and Technology · Zhejiang University</p>
+        <p class="summary">
+          I work on video editing and generation, efficient diffusion/DiT inference, model compression,
+          and multimodal foundation models.
+        </p>
+        <div class="hero__actions">
+          <a href="#publications" class="btn btn--solid">Selected Publications</a>
+          <a href="https://openreview.net/profile?id=~Lingling_Cai2" class="btn" target="_blank" rel="noopener noreferrer">OpenReview Profile</a>
+        </div>
+      </div>
     </div>
-</header>
+  </header>
 
-    <main class="main-content">
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>I am a Ph.D. candidate in Electronics Science and Technology at Zhejiang University (Direct Ph.D. Program), supervised by Prof. Kejie Huang. My research interests focus on video editing with diffusion models, model compression, and inference acceleration.</p>
-        </section>
+  <nav class="nav section-wrap" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#interests">Interests</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <div class="edu-header">
-                    <strong>Ph.D. in Electronics Science and Technology</strong>
-                    <span class="edu-date">2021 - Present</span>
-                </div>
-                <p>Zhejiang University, Hangzhou, China (Direct Ph.D. Program)</p>
-            </div>
-            <div class="education-item">
-                <div class="edu-header">
-                    <strong>B.Eng. in Microelectronics Science and Technology</strong>
-                    <span class="edu-date">2017 - 2021</span>
-                </div>
-                <p>Zhejiang University, Hangzhou, China</p>
-            </div>
-        </section>
+  <main class="section-wrap">
+    <section id="about" class="panel fade-in">
+      <h2>About</h2>
+      <p>
+        I am a direct-Ph.D. student at Zhejiang University, supervised by Prof. Kejie Huang.
+        My recent work focuses on zero-shot video editing for diffusion/Video DiT models,
+        quantization-aware training acceleration, and hardware-aware efficient AI systems.
+      </p>
+      <p>
+        This page is updated from my resume and OpenReview records.
+      </p>
+    </section>
 
-        <!-- Research Interests Section -->
-        <section id="research" class="section">
-            <h2>Research Interests</h2>
-            <ul class="research-list">
-                <li>Video Editing</li>
-                <li>Model Compression</li>
-                <li>Inference Acceleration</li>
-                <li>Diffusion Models</li>
-            </ul>
-        </section>
+    <section id="interests" class="panel fade-in">
+      <h2>Research Interests</h2>
+      <div class="chips">
+        <span>Video Editing</span>
+        <span>Video Generation</span>
+        <span>Diffusion Models / Video DiT</span>
+        <span>Model Compression</span>
+        <span>Inference Acceleration</span>
+        <span>Unified Generative Models</span>
+        <span>Multimodal Large Language Models</span>
+      </div>
+    </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <h2>Publications</h2>
+    <section id="publications" class="panel fade-in">
+      <h2>Selected Publications</h2>
+      <article class="pub-item">
+        <h3>FreeMask: Rethinking the Importance of Attention Masks for Zero-Shot Video Editing</h3>
+        <p class="meta"><strong>Lingling Cai</strong>, Kang Zhao, Hangjie Yuan, Yingya Zhang, Shiwei Zhang, Kejie Huang</p>
+        <p class="tag">AAAI 2025</p>
+        <p class="links">
+          <a href="https://freemask-edit.github.io" target="_blank" rel="noopener noreferrer">Project</a>
+          <a href="https://openreview.net/forum?id=0IJ340mMmoI" target="_blank" rel="noopener noreferrer">OpenReview</a>
+        </p>
+      </article>
 
-            <div class="publication">
-                <div class="pub-header">
-                    <strong>DFVEdit: Conditional Delta Flow Vector for Zero-shot Video Editing</strong>
-                    <span class="pub-tag">Under Review</span>
-                </div>
-                <p class="authors"><b>Lingling Cai</b>, Kang Zhao, Hangjie Yuan, Xiang Wang, Yingya Zhang, Kejie Huang</p>
-                <p class="pub-info">Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-25)</p>
-                <div class="pub-links">
-                    <a href="https://dfvedit.github.io" class="pub-link" target="_blank">[Project Page]</a>
-                </div>
-            </div>
+      <article class="pub-item">
+        <h3>DFVEdit: Conditional Delta Flow Vector for Zero-shot Video Editing</h3>
+        <p class="meta"><strong>Lingling Cai</strong>, Kang Zhao, Hangjie Yuan, Xiang Wang, Yingya Zhang, Kejie Huang</p>
+        <p class="tag">Submitted (NeurIPS 2025, OpenReview)</p>
+        <p class="links">
+          <a href="https://dfvedit.github.io" target="_blank" rel="noopener noreferrer">Project</a>
+          <a href="https://openreview.net/forum?id=W5TtIglU8P" target="_blank" rel="noopener noreferrer">OpenReview</a>
+        </p>
+      </article>
 
-            <div class="publication">
-                <div class="pub-header">
-                    <strong>DeQuan: Decoupled Quantization for Efficient DETRs</strong>
-                    <span class="pub-tag">Under Review</span>
-                </div>
-                <p class="authors"><b>Lingling Cai</b>, Kai Han, Quan Tang, Zhenhua Liu, Kejie Huang, Yunhe Wang</p>
-                <p class="pub-info">Under review.</p>
-                <div class="pub-links">
-                    <a href="#" class="pub-link" target="_blank">[arXiv](under review)</a>
-                </div>
-            </div>
+      <article class="pub-item">
+        <h3>A Near-array Convolution Computing Scheme Based on WSe2</h3>
+        <p class="meta"><strong>Lingling Cai</strong>, Kejie Huang, Ruibing Song, Haibin Shen</p>
+        <p class="tag">PIERS 2021 · Best Student Paper Award (Optics and Photonics Section, 5th)</p>
+        <p class="links">
+          <a href="https://openreview.net/forum?id=bHzs5f6Z0f" target="_blank" rel="noopener noreferrer">OpenReview</a>
+        </p>
+      </article>
 
-            <div class="publication">
-                <div class="pub-header">
-                    <strong>Only the Pivotal Data Matters: An Acceleration Method for Quantization Aware Training</strong>
-                    <span class="pub-tag">Under Review</span>
-                </div>
-                <p class="authors"><b>Lingling Cai</b>, Kai Han, Quan Tang, Zhenhua Liu, Kejie Huang, Yunhe Wang</p>
-                <p class="pub-info">A preprint. <em>arXiv:abs/2006.0990</em>...</em></a>
-                    </div>
-                </div>
+      <article class="pub-item">
+        <h3>DeQuan: Decoupled Quantization for Efficient DETRs</h3>
+        <p class="meta"><strong>Lingling Cai</strong>, Kai Han, Quan Tang, Zhenhua Liu, Kejie Huang, Yunhe Wang</p>
+        <p class="tag">Manuscript under review</p>
+      </article>
 
-                <div class="publication">
-                    <div class="pub-header">
-                        <strong>A Near-array Convolution Computing Scheme Based on WSe2</strong>
-                        <span class="pub-tag pub-tag-award">PIERS 2021 (Best Student Paper Award)</span>
-                    </div>
-                    <p class="authors"><b>Lingling Cai</b>, Kejie Huang, Ruibing Song, Haibin Shen</p>
-                    <p class="pub-info">The 45th Progress in Electromagnetics Research Symposium (PIERS 2021)</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+      <article class="pub-item">
+        <h3>Only the Pivotal Data Matters: An Acceleration Method for Quantization Aware Training</h3>
+        <p class="meta"><strong>Lingling Cai</strong>, Kai Han, Quan Tang, Zhenhua Liu, Kejie Huang, Yunhe Wang</p>
+        <p class="tag">Manuscript under review</p>
+      </article>
+    </section>
+
+    <section id="experience" class="panel fade-in">
+      <h2>Research Experience</h2>
+      <div class="timeline-item">
+        <h3>Video Editing (Jul 2023 - Present)</h3>
+        <p>Developed zero-shot video editing methods for text-to-video diffusion and Video DiT models, with focus on structure preservation, controllability, and efficiency.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Model Compression and Inference Acceleration (Jul 2022 - Present)</h3>
+        <p>Proposed dataset condensation and decoupled quantization methods to improve QAT efficiency and reduce quantization errors for Transformer detectors.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Low-power In-sensor Convolutional Computing (Mar 2021 - Sep 2021)</h3>
+        <p>Explored hardware-software co-design with photodetector sensor arrays for low-power, low-latency near-sensor computing.</p>
+      </div>
+    </section>
+
+    <section id="education" class="panel fade-in">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>Zhejiang University</h3>
+        <p>Ph.D. in Electronics Science and Technology (Direct Ph.D. Program), 2021 - Present</p>
+      </div>
+      <div class="edu-item">
+        <h3>Zhejiang University</h3>
+        <p>B.Eng. in Microelectronics Science and Technology, 2017 - 2021</p>
+      </div>
+      <div class="edu-item">
+        <h3>Honors</h3>
+        <p>Outstanding Student (twice), China Optical Valley Scholarship, National Endeavor Fellowship (3 times), Outstanding Graduate.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="panel fade-in">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <a class="project-card" href="https://freemask-edit.github.io" target="_blank" rel="noopener noreferrer">
+          <h3>FreeMask</h3>
+          <p>Mask design for controllable zero-shot video editing.</p>
+        </a>
+        <a class="project-card" href="https://dfvedit.github.io" target="_blank" rel="noopener noreferrer">
+          <h3>DFVEdit</h3>
+          <p>Flow-based efficient editing for Video DiT with large speedup and memory reduction.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="panel fade-in">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:cailingling22@zju.edu.cn">cailingling22@zju.edu.cn</a></p>
+      <p>
+        Links:
+        <a href="https://github.com/linglingcai0314" target="_blank" rel="noopener noreferrer">GitHub</a>
+        ·
+        <a href="https://openreview.net/profile?id=~Lingling_Cai2" target="_blank" rel="noopener noreferrer">OpenReview</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Lingling Cai. Last updated: 2026-03-02.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
